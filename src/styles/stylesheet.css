@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,300&display=swap');
+
+html{
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+p{
+    font-size: 1.6rem;
+    line-height: 1.5rem;
+}
+
+h1{
+    font-family: 'billabong';
+    text-align: center;
+    font-size: 13rem;
+    font-weight: 100;
+    letter-spacing: -1px;
+    margin: 2rem 0;
+}
+
+h2{
+    font-family: 'billabong';
+    text-align: center;
+    font-size: 13rem;
+    font-weight: 100;
+    letter-spacing: -1px;
+    margin: 2rem 0;
+    color: #e2d5ff;;
+}
+
+h1 a{
+    color: black;
+    text-decoration: none;
+}
+
+@font-face{
+    font-family: 'billabong';
+    src : url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.ttf") format('truetype');
+}
+
+.photo-grid{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.figure{
+    flex-basis: calc(33.333% - 4rem);
+    border: 1px solid #d3d3d3;
+    padding: 2rem;
+    flex-grow: 1;
+    margin: 0 2rem 2rem 2rem;
+}
+
+.photo{
+    width: calc(100% + 4rem);
+    margin: -2rem 0rem 0rem -2rem;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    flex-basis: 48%;
+    color: red;
+    font-size: 15px;
+    border: 2px solid #f2f2f2;
+    background-color: white;
+    padding: 5px;
+    line-height: 2;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button{
+    flex-basis: 48%;
+    color: red;
+    font-size: 15px;
+    border: 2px solid #f2f2f2;
+    background-color: white;
+    padding: 5px;
+    line-height: 2;
+    cursor: pointer;
+}
+
+.add-icon{
+    margin: 20px auto;
+    display: table;
+    padding: 40px;
+    background: url("https://image.flaticon.com/icons/svg/60/60740.svg") center no-repeat;
+    background-size: contain;
+    border: none;
+}
+
+.form{
+    max-width: 360px;
+    margin: 0px auto;
+    padding: 45px;
+    text-align: center;
+}
+
+.form input{
+    font-family: sans-serif;
+    background: #f2f2f2;
+    width: 100%;
+    border: none;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    margin: 0 0 15px;
+}
+
+.form button{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    background: #065784;
+    width: 100%;
+    border: none;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.form button:hover{
+    background: #0d94dd;
+}
+
+.figure .single-photo {
+    flex-basis: calc(33.333% - 4rem);
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin: 0 2rem 2rem 2rem;
+    padding: 2rem;
+    border: 1px solid #d3d3d3;
+    background: #fff;
+    position: relative;
+}
+ 
+.single-photo {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    background: #fff;
+    border: black;
+}
+ 
+.single-photo .figure {
+    box-shadow: none;
+    margin: 0 2rem 0 0;
+    border: 0;
+    padding: 0;
+    flex: 1 0 60%;
+    max-width: 60%;
+}
+ 
+.single-photo .comments {
+    flex: 1 0 40%;
+    max-width: 40%;
+}
+ 
+.single-photo .photo {
+    width: 100%;
+    margin: 0;
+}
+
+.comment{
+    width: 100%
+}
+
+.comment p {
+    border-bottom: 1px solid #d3d3d3;
+    padding: 0.5rem 0;
+}
+
+.comment-form input, .comment-form textarea {
+    width: 100%;
+    border: 0;
+    font-size: 1.3rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #d3d3d3;
+    outline: none;
+    resize: vertical;
+}
+ 
+button:hover,.button:hover, button:focus, .button:focus {
+    border-color: rgb(255, 0, 0);
+    outline: 0;
+}
+
+.speech-bubble {
+    background: url("https://d30y9cdsu7xlg0.cloudfront.net/png/51904-200.png") center no-repeat;
+    background-size: contain;
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+    border: none;
+    position: relative;
+}
+ 
+.comment-count {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: orange
+}
+
+.loader {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    font-size: 28pt;
+}
+
+/* landing page */
+
+.butt {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 15px 0;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    background: #603bbb;
+    cursor: pointer;
+    font-family: "Nunito", sans-serif;
+  }
+  
+  .login {
+    width: 95%;
+    min-height: 50vh;
+    padding: 0 10px;
+    /* background: #e9e9e9; */
+    display: flex;
+    font-family: "Nunito", sans-serif;
+  }
+  
+  .login .loginContainer {
+    padding: 60px;
+    margin: 50px auto;
+    width: 50%;
+    max-width: 520px;
+    /* min-height: 600px; */
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    background: radial-gradient(
+      ellipse at left bottom,
+      rgba(22, 24, 47, 1) 0%,
+      rgba(38, 20, 72, 0.9) 59%,
+      rgba(17, 27, 75, 0.9) 100%
+    );
+    box-shadow: 0 50px 70px -20px rgba(0, 0, 0, 0.8);
+    font-family: "Nunito", sans-serif;
+  }
+  
+  .login .loginContainer label {
+    color: white;
+    margin: 14px 0;
+    display: block;
+    font-size: 22px;
+    line-height: 1;
+    font-family: "Nunito", sans-serif;
+  }
+  
+  .login .loginContainer input {
+    width: 96%;
+    border: none;
+    outline: none;
+    font-size: 19px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    letter-spacing: 1px;
+    font-family: "Nunito", sans-serif;
+  }
+  
+  .login .loginContainer .btnContainer {
+    width: 100%;
+    padding: 24px 0;
+  }
+  
+  .login .loginContainer .btnContainer p {
+    margin: 14px 0 0 0;
+    text-align: right;
+    color: #fff;
+  }
+  
+  .login .loginContainer .btnContainer p span {
+    color: yellow;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+  }
+  
+  .login .loginContainer .btnContainer p span:hover {
+    color: red;
+  }
+  
+  .login .loginContainer .errorMsg {
+    color: red;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+  }
+
+  .but{
+      /* align-items: flex-end; */
+      margin-left: 90%;
+      margin-top: 1%;
+      /* display: flex; */
+      background-image: linear-gradient(rgb(255, 22, 22), rgb(105, 0, 0)) ;
+      color: white;
+      border-radius: 10px;
+      font-family: "Nunito", sans-serif;
+      font-size: small;
+      padding: 8px;
+  }
